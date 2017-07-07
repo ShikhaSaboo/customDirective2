@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+
+}
+.clrfix:before, .clrfix:after {  content: "";  
+display: table; } 
+
+.clrfix:after {  
+clear: both; } 
+
+.clrfix {  zoom: 1; /* IE6&7 */ }
+.form-wrapper{
+	background: rgba(0,0,0,.4);
+	margin: 0 auto;
+	width: 660px;
+	padding: 20px;
+	max-height: 800px;
+	overflow-y:auto;
+}
+.form-container{
+	background: rgba(0,0,0,.2);
+	padding: 15px;
+	margin-bottom: 15px;
+}
+.col-md-6{
+	width: 50%;
+	margin:10px 0px;
+	float: left;
+}
+.col-md-3{
+	width: 25%;
+	margin:10px 0px;
+	float: left;	
+}
+input{
+	height: 30px;
+	border-radius: 4px;
+	padding: 0px 10px;
+	border-width: 1px;
+	border-color: #ccc;
+}
+input[type="checkbox"]{
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+label{
+	margin-right: 15px;
+
+}
+select{
+	margin-left:10px;
+	min-width: 80px;
+	padding:6px 10px;
+	border-radius: 6px;	
+}
+.button-wrapper{
+	text-align: center;
+	margin:25px 0px 15px;
+}
+.submit-btn{
+	padding:8px 20px;
+	border-radius: 6px;
+}
+.allOther{
+	margin-left: 10px;
+}
+.allOther label{
+	margin-top: -10;
+	margin-bottom: 20px;
+}
+.form-output{
+	margin-bottom: 15px;
+}
+.ok{
+	background:#37d4b1;
+}
+.cancel{
+	background:#bbb6b6;
+}
+.edit{
+	background:#f7ca46;
+}
+.btn{
+	margin-top: 5px;
+	padding:6px 10px;
+	border-radius: 4px;
+	border:none;
+}
+.inpClass{
+	margin:10px;
+}
+.inpClass input{
+	width: "auto";
+	margin:5px;
+}
+.inpClass label{
+	margin:5px 10px 5px 0px;
+	color:"black !important";
+}
+member{
+	display: block;
+}
+.red{
+	background-color: "red";
+}

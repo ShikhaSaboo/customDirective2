@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cud-3</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body ng-app="myApp">
+<div class="form-wrapper" ng-controller="myController">
+	<div class="form-container">
+		<h2>{{ formTitle }}</h2>
+		<form name="generalForm" novalidate>
+		<div class="col-md-6">
+			<label>First Name</label>
+			<input name ="firstName" type="text" ng-model="user.firstName">
+		</div>
+		<div class="col-md-6">
+			<label>Last Name</label>
+			<input name ="lastName" type="text" ng-model="user.lastName">
+		</div>
+		<div class="col-md-6">
+			<label>UserRole</label>
+			<select ng-model="user.role">
+				<option ng-repeat="role in userRole">{{role}}</option>
+			</select>
+		</div>
+		<div class="clrfix"></div>
+		<div class="button-wrapper clrfix">
+			<button  class="submit-btn" ng-click="submit()">Submit</button>
+		</div>
+		</form>
+		<div ng-if = "cudValue">
+			<ul>
+				<li ng-repeat = "user in userArray">
+					<member fname = "user.firstName" lname = "user.lastName" role = "user.role" action="submit" result = "result" call="call" type='type'></member>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/controller2.js"></script>	
+</body>
+</html>
